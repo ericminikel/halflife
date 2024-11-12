@@ -1,0 +1,67 @@
+Subject ID	(rack)	Treatment summary (prefilled)	Test Article (from group)	Date of first treatment from group	Date of anticipated necropsy from group	Date of necropsy (actual)	Necropsy Study Day (computed)	Specimen collection timepoint (hh:mm)	Necropsy type	Health status at disposition (or necropsy)	Exclude row from analysis	MAX dFOB (computed)	Dose Volume (day 0)	Time of Injection (hh:mm)	Start of AE (hh:mm)	Acute Observation (inferred)	Clinical Signs (/comments) (day 0)	Body Weight (day 0)	aFOB (day 0.125)	mPrnp %PBS from hemisphere
+A-1		A-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						17.3	0	50.1
+A-2		A-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						18	0	109.9
+A-3		A-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						19	0	92.5
+B-1		B-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						18.5	0	101.9
+B-2		B-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						17.3	0	109.0
+B-3		B-naïve-0 ug	naïve	3/7/2022	3/7/2022	3/7/2022	0		terminal necropsy	healthy		0						17.4	0	103.3
+C-1		C-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0		8:44:00 AM				17.9	3	67.6
+C-2		C-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0						19.9	3	78.2
+C-3		C-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0						17.7	3	60.1
+D-1		D-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0						19.7	3	68.2
+D-2		D-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0						18.1	3	68.3
+D-3		D-1087171-500 ug	1087171	3/7/2022	3/8/2022	3/8/2022	1		terminal necropsy	healthy		0						17.7	3	62.3
+E-1		E-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0		8:57:00 AM				18.3	3	41.6
+E-2		E-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0						19	3	43.9
+E-3		E-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0						17.6	3	39.5
+F-1		F-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0						18.9	3	41.0
+F-2		F-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0						18.3	4	45.7
+F-3		F-1087171-500 ug	1087171	3/7/2022	3/10/2022	3/10/2022	3		terminal necropsy	healthy		0						17.2	3	37.8
+G-1		G-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0		9:09:00 AM				17.9	3	41.4
+G-2		G-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0						17.2	3	39.7
+G-3		G-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0						17.3	3	40.0
+H-1		H-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0						19.3	3	49.6
+H-2		H-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0						18	3	41.0
+H-3		H-1087171-500 ug	1087171	3/7/2022	3/14/2022	3/14/2022	7		terminal necropsy	healthy		0						19.9	3	41.3
+I-1		I-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0		9:17:00 AM				18.2	3	38.3
+I-2		I-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0						18.5	3	43.2
+I-3		I-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0						18.5	3	41.8
+J-1		J-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0						19.4	3	48.7
+J-2		J-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0						17.8	3	45.2
+J-3		J-1087171-500 ug	1087171	3/7/2022	3/17/2022	3/17/2022	10		terminal necropsy	healthy		0						16.2	3	44.7
+K-1		K-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0		9:29:00 AM				16.8	3	43.0
+K-2		K-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0						16.5	3	47.8
+K-3		K-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0						16.8	2	36.0
+L-1		L-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0						17.8	3	47.0
+L-2		L-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0						17.8	3	51.0
+L-3		L-1087171-500 ug	1087171	3/7/2022	3/21/2022	3/21/2022	14		terminal necropsy	healthy		0						16	3	35.7
+M-1		M-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0		9:40:00 AM				18.8	3	38.5
+M-2		M-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0						19.1	3	39.1
+M-3		M-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0						20.5	1	42.1
+N-1		N-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0						17.4	3	44.2
+N-2		N-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0						17	3	35.4
+N-3		N-1087171-500 ug	1087171	3/7/2022	3/28/2022	3/28/2022	21		terminal necropsy	healthy		0						16.7	4	50.5
+O-1		O-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0		9:50:00 AM				16.6	4	43.3
+O-2		O-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0						17	4	47.2
+O-3		O-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0						14.7	3	42.4
+P-1		P-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0						16.4	4	38.7
+P-2		P-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0						16.4	4	46.6
+P-3		P-1087171-500 ug	1087171	3/7/2022	4/4/2022	4/4/2022	28		terminal necropsy	healthy		0						19.3	4	51.5
+Q-1		Q-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0		10:02:00 AM				19.2	4	51.1
+Q-2		Q-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0						18.3	4	60.1
+Q-3		Q-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0						17	4	49.4
+R-1		R-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0						19.9	4	54.0
+R-2		R-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0						17.4	2	50.3
+R-3		R-1087171-500 ug	1087171	3/7/2022	4/11/2022	4/11/2022	35		terminal necropsy	healthy		0						18.3	3	55.7
+S-1		S-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0		10:10:00 AM				18.7	3	57.8
+S-2		S-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						18.5	2	54.1
+S-3		S-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						16.5	3	47.2
+T-1		T-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						19.2	3	55.1
+T-2		T-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						17.1	3	47.2
+T-3		T-1087171-500 ug	1087171	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						16.6	3	54.8
+U-1		U-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						19.2	0	91.4
+U-2		U-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						18.5	0	105.3
+U-3		U-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						20	0	104.1
+V-1		V-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						19.3	0	116.9
+V-2		V-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						17.6	0	109.8
+V-3		V-naïve-0 ug	naïve	3/7/2022	4/18/2022	4/18/2022	42		terminal necropsy	healthy		0						16.8	0	105.9

@@ -1,0 +1,42 @@
+sample	standard_curve	ngml_av	se_mean	flag
+KO blood 	MoPrp16	12.924	0.15	
+KO brain	MoPrp16	13.716	0.444	
+KO colon 	MoPrp16	5.12	0	LLQ
+KO femur	MoPrp16	5.12	0	LLQ
+KO heart	MoPrp16	5.12	0	LLQ
+KO kidney 	MoPrp16	16.277	0.095	
+KO liver 	MoPrp16	15.275	0.048	
+KO lung	MoPrp16	10.779	0.052	
+KO lymph 	MoPrp16	11.66	0.103	
+KO plasma	MoPrp16	8.285	0.169	
+KO quad	MoPrp16	5.12	0	LLQ
+KO sciatic 	MoPrp16	5.12	0	LLQ
+KO skin 	MoPrp16	5.12	0	LLQ
+KO spleen	MoPrp16	9.716	0.053	
+KO stomach 	MoPrp16	5.12	0	LLQ
+KO uterus	MoPrp16	7.716	0.172	
+Mo Neg	MoPrp16	10.24	0	LLQ
+Mo Pos Hi QC	MoPrp16	126.296	1.887	
+Mo Pos Lo QC	MoPrp16	24.034	0.305	
+Mo Pos Mid QC	MoPrp16	68.65	1.038	
+New Mo Neg	MoPrp16	10.24	0	LLQ
+New Mo Pos Hi QC	MoPrp16	124.225	1.689	
+New Mo Pos Lo QC	MoPrp16	22.598	0.104	
+New Mo Pos Mid QC	MoPrp16	88.63	0.701	
+WT blood 	MoPrp16	24.165	0.044	
+WT brain 	MoPrp16	73.472	0.15	
+WT colon 	MoPrp16	18.013	0.046	
+WT femur 	MoPrp16	9.008	0.22	
+WT heart	MoPrp16	9.497	0.488	
+WT kidney 	MoPrp16	12.422	0.252	
+WT liver 	MoPrp16	18.244	0.371	
+WT lung 	MoPrp16	26.237	0.703	
+WT lymph	MoPrp16	17.267	0.046	
+WT plasma 	MoPrp16	8.002	0	
+WT quad 	MoPrp16	10.568	0.053	
+WT sciatic 	MoPrp16	5.12	0	LLQ
+WT skin 	MoPrp16	5.12	0	LLQ
+WT spleen	MoPrp16	16.75	NA	
+WT spleen 	MoPrp16	15.131	NA	
+WT stomach 	MoPrp16	11.453	0.309	
+WT uterus 	MoPrp16	15.801	0.286	

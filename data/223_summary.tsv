@@ -1,0 +1,26 @@
+sample	standard_curve	ngml_av	se_mean	flag
+Mo Pos Hi QC brain	MoPrP16	29.32	1.191	
+Mo Pos Hi QC colon	MoPrP16	19.769	0.409	
+Mo Pos Hi QC colon 4C O/N	MoPrP16	11.534	0.048	
+Mo Pos Hi QC colon RT O/N	MoPrP16	5.849	0.121	
+Mo Pos Hi QC colon thaw once	MoPrP16	15.698	0.511	
+Mo Pos Hi QC colon thaw twice	MoPrP16	14.893	0.249	
+Mo Pos Lo QC brain	MoPrP16	10.713	0.14	
+Mo Pos Lo QC colon	MoPrP16	2.779	0.029	
+Mo Pos Lo QC colon 4C O/N	MoPrP16	2.402	0.302	
+Mo Pos Lo QC colon RT O/N	MoPrP16	2.048	0	LLQ
+Mo Pos Lo QC colon thaw once	MoPrP16	2.566	0.1	
+Mo Pos Lo QC colon thaw twice	MoPrP16	2.5	0.085	
+Mo Pos Mid QC brain	MoPrP16	75.845	1.624	
+Mo Pos Mid QC colon	MoPrP16	10.498	0.074	
+Mo Pos Mid QC colon 4C O/N	MoPrP16	5.944	0.091	
+Mo Pos Mid QC colon RT O/N	MoPrP16	2.447	0.25	
+Mo Pos Mid QC colon thaw once	MoPrP16	7.372	0.599	
+Mo Pos Mid QC colon thaw twice	MoPrP16	7.978	0.125	
+Mo Pos Neg QC brain	MoPrP16	4.096	0	LLQ
+Mo Pos Neg QC colon	MoPrP16	2.048	0	LLQ
+Mo Pos Neg QC colon 4C O/N	MoPrP16	2.048	0	LLQ
+Mo Pos Neg QC colon RT O/N	MoPrP16	2.048	0	LLQ
+Mo Pos Neg QC colon thaw once	MoPrP16	2.048	0	LLQ
+Mo Pos Neg QC colon thaw twice	MoPrP16	2.048	0	LLQ
+x	MoPrP16	4.096	0	LLQ
