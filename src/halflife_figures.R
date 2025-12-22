@@ -13,6 +13,7 @@ suppressMessages(library(openxlsx))
 suppressMessages(library(smoother))
 suppressMessages(library(plotrix))
 suppressMessages(library(magick))
+suppressMessages(library(betareg))
 suppressMessages(library(minpack.lm))
 
 if (interactive()) setwd('~/d/sci/src/halflife')
@@ -198,6 +199,7 @@ calculate_residuals = function(par, data, dt=0.01) {
   return (residuals)
 }
 
+## Functions for Fig 4 ####
 
 # Lt is proportion labeled at time t
 Lt = function(avails, t, lambda) {
@@ -215,22 +217,41 @@ Lt = function(avails, t, lambda) {
 }
 
 
-calculate_residuals_Lt = function(par, data, dt=0.01) {
+calculate_residuals_Lt = function(par, data, dt=0.01, avails=free_lysine) {
   lambda = par[['lambda']]
   t = seq(0,max(data$day),dt)
+  avails = free_lysine(t)
   L_pred = Lt(avails, t, lambda)[match(data$day, t)]
   residuals = data$prop_labeled - L_pred
   return (residuals)
 }
 
 
-fit_isotopic_thalf = function(chow_days, prop_labeled, start_lambda=log(2)/5, avails_function=free_lysine, dt=0.01) {
+
+fit_isotopic_thalf = function(chow_days, prop_labeled, start_lambda=log(2)/5, dt=0.01) {
   t = seq(0, max(chow_days), dt)
-  avails = avails_function(t) 
   nlsfit = nls.lm(par=c(lambda=start_lambda), fn=calculate_residuals_Lt, data=tibble(day=chow_days, prop_labeled), dt=dt)
   fit_lambda = as.numeric(nlsfit$par['lambda'])
   thalf_found = log(2)/fit_lambda
   return(thalf_found)
+}
+
+
+label_difference = function(prop_labeled, chow_days, genotype) {
+  # consolidate into 1 vs. 1 comparison of FFI vs. both control groups
+  grp = case_when(genotype=='129(TT-3F4-FFI)HOZ' ~ 'FFI',
+                  genotype!='129(TT-3F4-FFI)HOZ' ~ 'controls')
+  # halflife calculation
+  test_grp_thalf = fit_isotopic_thalf(chow_days[grp=='FFI'], prop_labeled[grp=='FFI'])
+  ctrl_grp_thalf = fit_isotopic_thalf(chow_days[grp=='controls'], prop_labeled[grp=='controls'])
+  thalf_ratio = test_grp_thalf/ctrl_grp_thalf
+  # betareg model
+  prop_labeled = pmin(pmax(prop_labeled,1e-6),1-1e-6) # betareg rejects 0 values so allow 1 ppm tolerance
+  br_obj = betareg(prop_labeled ~ chow_days * grp)
+  br_ffi_pval = summary(br_obj)$coefficients$mean['grpFFI','Pr(>|z|)']
+  br_interaction_pval = summary(br_obj)$coefficients$mean['chow_days:grpFFI','Pr(>|z|)']
+  # edit the return statement to decide which to use
+  return (tibble(thalf_ratio=thalf_ratio, br_ffi_pval=br_ffi_pval, br_interaction_pval=br_interaction_pval))
 }
 
 
@@ -1772,7 +1793,7 @@ leg = tibble(genotype=c("129(TT-3F4-FFI)HOZ","129(TT-3F4WT)","B6/N"),
              disp = c('ki-3F4-FFI','ki-3F4-WT','C57BL/6N WT'),
              color=c('#D95F02','#22127A','#77127A'),
              xgeno = c(1,2,3),
-             ttest_grouping = c('test','control','control'))
+             ttest_grouping = c('FFI','control','control'))
 
 
 ffi_all %>% 
@@ -1785,8 +1806,8 @@ ffi_all %>%
   group_by(protein, peptide, age) %>%
   summarize(.groups='keep',
             n = n(),
-            pval_total = t.test(total[genotype=='129(TT-3F4-FFI)HOZ'], total[genotype!='129(TT-3F4-FFI)HOZ'])$p.value,
-            ratio_total = mean(total[genotype=='129(TT-3F4-FFI)HOZ']) / mean(total[genotype!='129(TT-3F4-FFI)HOZ']),
+            pval_total = t.test(total[ttest_grouping=='FFI'], total[ttest_grouping=='control'])$p.value,
+            ratio_total = mean(total[ttest_grouping=='FFI']) / mean(total[ttest_grouping=='control']),
             label_obj = label_difference(prop_labeled, chow_days, genotype),
             ratio_thalf = label_obj$thalf_ratio, 
             pval_label_ffi = label_obj$br_ffi_pval, 
@@ -2044,6 +2065,25 @@ ffi_all %>%
 
 write_supp_table(ffi_total_smry, 'Abundance by peptide, genotype, age in FFI and control mice.')
 
+
+ffi_all %>% 
+  inner_join(leg, by='genotype') %>%
+  group_by(protein, peptide) %>%
+  mutate(n_ages_detected = length(unique(age))) %>%
+  filter(n_ages_detected == 2) %>%
+  ungroup() %>%
+  select(-n_ages_detected) %>%
+  rename(genotype_group = ttest_grouping) %>%
+  group_by(protein, peptide, genotype_group, age) %>%
+  summarize(.groups='keep',
+            n = n(),
+            thalf_estimate = fit_isotopic_thalf(chow_days, prop_labeled)
+  ) %>%
+  ungroup() -> thalves_by_genotype_group_and_age
+
+write_supp_table(thalves_by_genotype_group_and_age, 'Protein half-life estimates by peptide and age in FFI vs. control mice.')
+
+
 ffi_all %>% 
   inner_join(leg, by='genotype') %>%
   group_by(protein, peptide) %>%
@@ -2058,7 +2098,7 @@ ffi_all %>%
             ) %>%
   ungroup() -> thalves_by_genotype_and_age
 
-write_supp_table(thalves_by_genotype_and_age, 'Protein half-life estimates by peptide, genotype, and age in FFI and control mice.')
+write_supp_table(thalves_by_genotype_and_age, 'Protein half-life estimates by peptide, exact genotype, and age in FFI and control mice.')
 
 
 
